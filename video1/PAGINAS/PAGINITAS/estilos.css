@@ -1,0 +1,267 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(45deg, #161618, #161618);
+    color: #fff;
+    font-family:"Arial";
+}
+ul{
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    color:#fff;
+    text-decoration: none;
+}
+
+.fondo-animado {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+span.uno,
+span.dos,
+span.tres,
+span.cuatro {
+    border: 0;
+    display: block;
+    position: absolute;
+    bottom:0;
+    left: 0;
+    background-color: #fff;
+    animation: vuelta 7s linear infinite normal both;
+}
+
+span.uno{ 
+    width: 100px;
+    height: 100px;
+    bottom: -100px;
+    background-color: #161618;
+    background-image: url(https://media.game.es/COVERV2/3D_L/208/208556.png);
+    background-size: 97%;
+
+}
+span.dos{ 
+    width: 120px;
+    height: 120px;
+    bottom: -120px;
+    background-color: #161618;
+    background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoWkplfuaht0BtEQSLbkXo37Sa2e_dwhdg2UvW3rbB4ycd4jljP0i1TByrtvUJGiGs3PxylYbz2Mf517L4eHEI-J1wivRZloJJW2uvTeBGzL-m1Ub7aRDPio-xoKnK1zHFxOB5vUNyHdK4I8K-jxYhobZUQPlGiCgnTndznqRj7mJVH3RY0j6DoASnnA/w1200-h630-p-k-no-nu/Pokemon_Scarlet_Violet_OLED_Switch_all.png);
+    background-size: 165%;
+}
+span.tres{ 
+    width: 70px;
+    height: 40px;
+    bottom: -70px;
+    background-color: #161618;
+    background-image: url(https://images.ctfassets.net/pkeegl0voupm/1Tx1VOw11Qr7VNLbTwD6Co/eebe96a2ba52071ce56c59679ae6e66e/news_oled_pokemonsv_bnr.jpg);
+    background-size: 130%;
+}
+span.cuatro{ 
+    width: 100px;
+    height: 70px;
+    bottom: -50px;
+    background-color: #161618;
+    background-image: url(https://www.raffledup.com/wp-content/uploads/2022/11/IMG_1353-scaled.jpg);
+    background-size: 100%;
+}
+
+@keyframes vuelta {
+    from{
+      transform: rotate(0deg);
+      bottom: 0;
+      opacity: 0;  
+    }
+    5% {
+      opacity: 1;
+    }
+    60% {
+        opacity: 1;
+    }
+    to {
+        transform: rotate(160deg);
+        bottom: calc(100% + 100px);
+        opacity: 0;
+    }
+}
+.fondo-animado span:nth-child(1) {
+    left: 5%;
+}
+.fondo-animado span:nth-child(2) {
+    left: 50%;
+}
+.fondo-animado span:nth-child(3) {
+    left: 35%;
+}
+.fondo-animado span:nth-child(4) {
+    left: 75%;
+}
+.fondo-animado span:nth-child(5) {
+    left: 25%;
+}
+.fondo-animado span:nth-child(6) {
+    left: 85%;
+}
+.fondo-animado span:nth-child(7) {
+    left: 90%;
+}
+.fondo-animado span:nth-child(8) {
+    left: 65%;
+}
+.fondo-animado span:nth-child(9) {
+    left: 60%;
+}
+.fondo-animado span:nth-child(10) {
+    left: 75%;
+}
+.fondo-animado span:nth-child(11) {
+    left: 10%;
+}
+.fondo-animado span:nth-child(12) {
+    left: 45%;
+}
+
+span.delay-1 {
+    animation-delay: 1s;
+}
+span.delay-2 {
+    animation-delay: 2s;
+}
+span.delay-3 {
+    animation-delay: 3s;
+}
+span.delay-4 {
+    animation-delay: 4s;
+}
+span.delay-5 {
+    animation-delay: 5s;
+}
+span.delay-6 {
+    animation-delay: 6s;
+}
+
+.menu {
+    position: absolute;
+    
+    top: 10%;
+    left: 20%;
+    height: 100%;
+    z-index: 10;
+}
+.a-inicio img {
+    width: 60%;
+    justify-content: center;
+    top: 30px;
+
+    border-radius: 20%;
+    margin-bottom: 05px;
+}
+
+.ul-enlaces img{
+    width: 50%;
+
+    margin-bottom: 05px;
+}
+.a-inicio img:hover{
+    transform: rotateY(180deg) scale(1.05) translate(0, -5%);
+
+}
+.ul-enlaces {
+    height: 500px;
+    width: 700px;
+
+    background-color: #19191b;
+    box-shadow: 0 0 15px 2px rgb(36, 36, 36);
+    
+}
+.ul-enlaces li  {
+    width: 10%;
+}
+.ul-enlaces u{
+    flex-direction: row;
+    font-size: 30px;
+    align-items: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 0 0 5px rgb(182, 147, 147);
+    z-index: 5;
+    justify-content: space-around;
+}
+.ul-enlaces b img{
+    width: 10%;
+    right: 500px;
+}
+.ul-enlaces a{
+
+    width: 40%;
+    height: 35%;
+}
+.ul-enlaces img {
+    font-size: 1.3rem;
+    transition: all ease-in-out 300ms;
+}
+.ul-enlaces img:hover {
+    transform: scale(1.5);
+}
+
+.ul-enlaces a span {
+    font-size: 0.7em;
+    display: inline-block;
+    position: absolute;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 12px;
+    transform: translate(0) rotate(-180deg);
+    transition: all ease-in-out 300ms;
+    opacity: 0;
+}
+
+.ul-home .a-inicio span:hover{
+    animation: nintendo 0.5s ease-in-out 1 normal both;
+}
+
+
+.seccion-header h1 span:hover {
+    animation: nintendo 0.5s ease-in-out 1 normal both;
+}
+@keyframes nintendo{
+    from{
+        transform: scale3d(1,1,1);
+        color: #fff;
+    }
+    30%{
+        transform: scale3d(1.25, 3, 1);
+    }
+    50%{
+        color: rgb(255, 138, 102);
+        transform: scale3d(.75, 1.25, 1);
+    }
+    to{
+        transform: scale3d(1,1,1);
+        color: #fff;
+    }
+}
+
+
+.seccion-header ul img:hover{
+    animation: nintendo2 0.5s ease-in-out 1 normal both;
+}
+@keyframes nintendo2{
+    from{
+        transform: scale3d(1,1,1);
+        color: #fff;
+    }
+    50%{
+        color: rgb(255, 138, 102);
+        transform: scale3d(.75, 1.25, 1);
+    }
+    to{
+        transform: scale3d(1,1,1);
+        color: #fff;
+    }
+}
